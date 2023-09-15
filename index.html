@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Patrick Damme</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        >
+        <style>
+            li {
+                margin-bottom: 10px;
+            }
+
+            b.meInList {
+                font-weight: normal;
+                text-decoration: underline;
+            }
+            b.paperTitle {
+                font-weight: bold;
+            }
+            b.paperVenue {
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            .copyright {
+                position: absolute;
+                bottom: 100%;
+                right: 0px;
+                background-color: #444;
+                color: #aaa;
+                font-size: x-small;
+                padding: 0px;
+                padding-left: 3px;
+                padding-right: 3px;
+                transform: rotate(-90deg);
+                transform-origin: 100% 100%;
+                margin: 0px;
+            }
+
+            button.btn {
+                margin-bottom: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div style="position: relative;">
+                                <img src="pd.jpg" alt="Photograph of Patrick Damme." class="img-fluid">
+                                <div class="copyright">Photo: &copy; FOTO MUR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="card h-100">
+                        <h2 class="card-header"><span style="color: #999;">Dr.-Ing.</span> Patrick Damme</h2>
+                        <div class="card-body">
+                            <b>Postdoc Researcher at Technische Universit&auml;t Berlin</b><br>
+                            Faculty IV - Electrical Engineering and Computer Science<br>
+                            Berlin Institute for the Foundations of Learning and Data (BIFOLD)<br>
+                            Big Data Engineering (DAMS Lab) Group<br>
+                            <hr>
+                            Office: Room FR 768, Franklinstra&szlig;e 28/29, 10587 Berlin, Germany<br>
+                            <span style="font-family: monospace;">patrick.damme(&aelig;)tu-berlin.de</span><br>
+                            <hr>
+                            <a target="blank" href="https://scholar.google.com/citations?user=385qd-MAAAAJ"><button type="button" class="btn btn-primary">Google Scholar</button></a>
+                            <a target="blank" href="https://dblp.uni-trier.de/pid/160/3958.html"><button type="button" class="btn btn-primary">DBLP</button></a>
+                            <a target="blank" href="https://orcid.org/0000-0002-3355-6473"><button type="button" class="btn btn-primary">ORCID</button></a>
+                            <a target="blank" href="https://github.com/pdamme"><button type="button" class="btn btn-primary">GitHub</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        <b>I'm a postdoc researcher</b> in the <a href="https://www.tu.berlin/en/dams">DAMS Lab</a> research group headed by <a href="https://mboehm7.github.io/">Matthias Boehm</a> at <a href="https://www.tu.berlin/en/">Technische Universit&auml;t Berlin</a> and the <a href="https://www.bifold.berlin/">BIFOLD research center</a> in Berlin, Germany.
+                        My research interests are centered around database systems, machine learning systems, and techniques for making complex analyses of large data volumes efficient, scalable, and simple.
+                        In that context, my current topics of interest include extensible data systems, compilation and runtime techniques, as well as language abstractions for declarative analyses.
+                        The main vehicle of this research is <a href="https://github.com/daphne-eu/daphne">DAPHNE</a>, an open and extensible system infrastructure for integrated data analysis pipelines combining data management and query processing, machine learning training and scoring, as well as high-performance computing and simulations.
+                    </p>
+                    <p>
+                        Until fall 2022, I was a university project assistant at <a href="https://www.tugraz.at/en/home">Graz University of Technology</a> and a senior researcher (postdoc) at the co-located <a href="https://www.know-center.at/">Know-Center GmbH</a> in Graz, Austria.
+                        During that time, I started my research in the <a href="https://daphne-eu.eu/">DAPHNE EU-project</a> and became one of the main contributors of the DAPHNE system.
+                    </p>
+                    <p>
+                        Before that, in 2020, I received my PhD (Dr.-Ing.) from <a href="https://tu-dresden.de/?set_language=en">Technische Universit&auml;t Dresden</a> in Dresden, Germany, where I was a research associate in the <a href="https://tu-dresden.de/ing/informatik/sya/db">Dresden Database Systems group</a>.
+                        I was supervised by <a href="https://tu-dresden.de/ing/informatik/sya/db/die-professur/inhaber-in?set_language=en">Wolfgang Lehner</a> and co-supervised by <a href="https://tu-dresden.de/ing/informatik/sya/db/die-professur/beschaeftigte#section-1">Dirk Habich</a>.
+                        In my <a href="https://nbn-resolving.org/urn:nbn:de:bsz:14-qucosa2-723288">PhD thesis</a>, I investigated the use of lightweight integer compression for the intermediate results of complex OLAP queries in in-memory column stores as a means to address the memory wall.
+                        This work led to the development of <a href="https://github.com/MorphStore">MorphStore</a>, a research prototype of a query processing engine for columnar data, based on compression and SIMD as first-class citizens.
+                        I've also collaborated with colleagues on topics like SIMD, NVRAM, resilience, and energy efficiency in database systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr>
+            <a href="#publications"><button type="button" class="btn btn-dark">Publications</button></a>
+            <a href="#teaching"><button type="button" class="btn btn-dark">Teaching</button></a>
+            <a href="#service"><button type="button" class="btn btn-dark">Service</button></a>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="card">
+                <a name="publications"></a>
+                <h2 class="card-header">Publications</h2>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2023</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Aristotelis Vontzalidis, Stratos Psomadakis, Constantinos Bitsakos, Mark Dokter, Kevin Innerebner, <b class="meInList">Patrick Damme</b>, Matthias Boehm, Florina M. Ciorba, Ahmed Eleliemy, Vasileios Karakostas, Ale&scaron; Zamuda, Dimitrios Tsoumakos:
+                                    <b class="paperTitle">DAPHNE Runtime: Harnessing Parallelism for Integrated Data Analysis Pipelines.</b>
+                                    <b class="paperVenue">Euro-Par Workshops 2023.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Matthias Boehm:
+                                    <b class="paperTitle">Enabling Integrated Data Analysis Pipelines on Heterogeneous Hardware through Holistic Extensibility (Extended Abstract (New Idea)).</b>
+                                    <b class="paperVenue">NoDMC@BTW 2023.</b>
+                                </li>
+                                <li>
+                                    Lucas Woltmann, <b class="meInList">Patrick Damme</b>, Claudio Hartmann, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">Learned Selection Strategy for Lightweight Integer Compression Algorithms.</b>
+                                    <b class="paperVenue">EDBT 2023.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2022</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Marius Birkenbach, Constantinos Bitsakos, Matthias Boehm, Philippe Bonnet, Florina M. Ciorba, Mark Dokter, Pawel Dowgiallo, Ahmed Eleliemy, Christian Faerber, Georgios I. Goumas, Dirk Habich, Niclas Hedam, Marlies Hofer, Wenjun Huang, Kevin Innerebner, Vasileios Karakostas, Roman Kern, Toma&zcaron; Kosar, Alexander Krause, Daniel Krems, Andreas Laber, Wolfgang Lehner, Eric Mier, Marcus Paradies, Bernhard Peischl, Gabrielle Poerwawinata, Stratos Psomadakis, Tilmann Rabl, Piotr Ratuszniak, Pedro Silva, Nikolai Skuppin, Andreas Starzacher, Benjamin Steinwender, Ilin Tolovski, P&imath;nar T&ouml;z&uuml;n, Wojciech Ulatowski, Yuanyuan Wang, Izajasz P. Wrosz, Ale&scaron; Zamuda, Ce Zhang, Xiaoxiang Zhu:
+                                    <b class="paperTitle">DAPHNE: An Open and Extensible System Infrastructure for Integrated Data Analysis Pipelines.</b>
+                                    <b class="paperVenue">CIDR 2022.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2021</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Mikhail Zarubin, <b class="meInList">Patrick Damme</b>, Alexander Krause, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">SIMD-MIMD Cocktail in a Hybrid Memory Glass: Shaken, Not Stirred.</b>
+                                    <b class="paperVenue">SYSTOR 2021.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2020</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>:
+                                    <b class="paperTitle">Analytical Query Processing Based on Continuous Compression of Intermediates.</b>
+                                    <b class="paperVenue">PhD Thesis, Dresden University of Technology, Germany.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Annett Ungeth&uuml;m, Johannes Pietrzyk, Alexander Krause, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">MorphStore: Analytical Query Engine with a Holistic Compression-Enabled Processing Model.</b>
+                                    <b class="paperVenue">PVLDB 13(11).</b>
+                                </li>
+                                <li>
+                                    Annett Ungeth&uuml;m, Johannes Pietrzyk, <b class="meInList">Patrick Damme</b>, Alexander Krause, Dirk Habich, Wolfgang Lehner, Erich Focht:
+                                    <b class="paperTitle">Hardware-Oblivious SIMD Parallelism for In-Memory Column-Stores.</b>
+                                    <b class="paperVenue">CIDR 2020.</b>
+                                </li>
+                                <li>
+                                    Mikhail Zarubin, <b class="meInList">Patrick Damme</b>, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">Polymorphic Compressed Replication of Columnar Data in Scale-Up Hybrid Memory Systems.</b>
+                                    <b class="paperVenue">SYSTOR 2020.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Annett Ungeth&uuml;m, Johannes Pietrzyk, Alexander Krause, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">MorphStore: Analytical Query Engine with a Holistic Compression-Enabled Processing Model.</b>
+                                    <b class="paperVenue">CoRR abs/2004.09350.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2019</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Johannes Pietrzyk, Dirk Habich, <b class="meInList">Patrick Damme</b>, Erich Focht, Wolfgang Lehner:
+                                    <b class="paperTitle">Evaluating the Vector Supercomputer SX-Aurora TSUBASA as a Co-Processor for In-Memory Database Systems.</b>
+                                    <b class="paperVenue">Datenbank-Spektrum 19(3).</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Annett Ungeth&uuml;m, Juliana Hildebrandt, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">From a Comprehensive Experimental Survey to a Cost-based Selection Strategy for Lightweight Integer Compression Algorithms.</b>
+                                    <b class="paperVenue">ACM Trans. Database Syst. 44(3).</b>
+                                </li>
+                                <li>
+                                    Johannes Pietrzyk, Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">First Investigations of the Vector Supercomputer SX-Aurora TSUBASA as a Co-Processor for Database Systems.</b>
+                                    <b class="paperVenue">BTW (Workshops) 2019.</b>
+                                </li>
+                                <li>
+                                    Mikhail Zarubin, <b class="meInList">Patrick Damme</b>, Thomas Kissinger, Dirk Habich, Wolfgang Lehner, Thomas Willhalm:
+                                    <b class="paperTitle">Integer Compression in NVRAM-centric Data Stores: Comparative Experimental Analysis to DRAM.</b>
+                                    <b class="paperVenue">DaMoN 2019.</b>
+                                </li>
+                                <li>
+                                    Dirk Habich, <b class="meInList">Patrick Damme</b>, Annett Ungeth&uuml;m, Johannes Pietrzyk, Alexander Krause, Juliana Hildebrandt, Wolfgang Lehner:
+                                    <b class="paperTitle">MorphStore - In-Memory Query Processing based on Morphing Compressed Intermediates LIVE.</b>
+                                    <b class="paperVenue">SIGMOD 2019.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2018</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Annett Ungeth&uuml;m, Johannes Pietrzyk, <b class="meInList">Patrick Damme</b>, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">Conflict Detection-Based Run-Length Encoding - AVX-512 CD Instruction Set in Action.</b>
+                                    <b class="paperVenue">ICDE Workshops 2018.</b>
+                                </li>
+                                <li>
+                                    Dirk Habich, <b class="meInList">Patrick Damme</b>, Annett Ungeth&uuml;m, Wolfgang Lehner:
+                                    <b class="paperTitle">Make Larger Vector Register Sizes New Challenges?: Lessons Learned from the Area of Vectorized Lightweight Compression Algorithms.</b>
+                                    <b class="paperVenue">DBTest@SIGMOD 2018.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2017</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Annett Ungeth&uuml;m, <b class="meInList">Patrick Damme</b>, Johannes Pietrzyk, Alexander Krause, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">Balancing Performance and Energy for Lightweight Data Compression Algorithms.</b>
+                                    <b class="paperVenue">ADBIS (Short Papers and Workshops) 2017.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Dirk Habich, Juliana Hildebrandt, Wolfgang Lehner:
+                                    <b class="paperTitle">Lightweight Data Compression Algorithms: An Experimental Survey (Experiments and Analyses).</b>
+                                    <b class="paperVenue">EDBT 2017.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Dirk Habich, Juliana Hildebrandt, Wolfgang Lehner:
+                                    <b class="paperTitle">Insights into the Comparative Evaluation of Lightweight Data Compression Algorithms.</b>
+                                    <b class="paperVenue">EDBT 2017.</b>
+                                </li>
+                                <li>
+                                    Juliana Hildebrandt, Dirk Habich, Thomas K&uuml;hn, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Metamodeling Lightweight Data Compression Algorithms and its Application Scenarios.</b>
+                                    <b class="paperVenue">ER Forum/Demos 2017.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>:
+                                    <b class="paperTitle">Query Processing Based on Compressed Intermediates.</b>
+                                    <b class="paperVenue">PhD@VLDB 2017.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2016</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Juliana Hildebrandt, Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Model Kit for Lightweight Data Compression Algorithms.</b>
+                                    <b class="paperVenue">EDBT 2016.</b>
+                                </li>
+                                <li>
+                                    Juliana Hildebrandt, Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Compression-Aware In-Memory Query Processing: Vision, System Design and Beyond.</b>
+                                    <b class="paperVenue">ADMS/IMDM@VLDB 2016.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2015</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">Direct Transformation Techniques for Compressed Data: General Approach and Application Scenarios.</b>
+                                    <b class="paperVenue">ADBIS 2015.</b>
+                                </li>
+                                <li>
+                                    Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Optimierung der Anfrageverarbeitung mittels Kompression der Zwischenergebnisse.</b>
+                                    <b class="paperVenue">BTW 2015.</b>
+                                </li>
+                                <li>
+                                    Till Kolditz, Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner, Dmitrii Kuvaiskii, Oleksii Oleksenko, Christof Fetzer:
+                                    <b class="paperTitle">Resiliency-aware Data Compression for In-memory Database Systems.</b>
+                                    <b class="paperVenue">DATA 2015.</b>
+                                </li>
+                                <li>
+                                    Juliana Hildebrandt, Dirk Habich, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Modularisierung leichtgewichtiger Kompressionsalgorithmen.</b>
+                                    <b class="paperVenue">GvD 2015.</b>
+                                </li>
+                                <li>
+                                    Hannes Voigt, <b class="meInList">Patrick Damme</b>, Wolfgang Lehner:
+                                    <b class="paperTitle">Enjoy FRDM - Play with a Schema-flexible RDBMS.</b>
+                                    <b class="paperVenue">ICDE 2015.</b>
+                                </li>
+                                <li>
+                                    <b class="meInList">Patrick Damme</b>, Dirk Habich, Wolfgang Lehner:
+                                    <b class="paperTitle">A Benchmark Framework for Data Compression Techniques.</b>
+                                    <b class="paperVenue">TPCTC 2015.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2013</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    Julian Eberius, <b class="meInList">Patrick Damme</b>, Katrin Braunschweig, Maik Thiele, Wolfgang Lehner:
+                                    <b class="paperTitle">Publish-time Data Integration for Open Data Platforms.</b>
+                                    <b class="paperVenue">WOD 2013.</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="card">
+                <a name="teaching"></a>
+                <h2 class="card-header">Teaching</h2>
+                <div class="card-body">
+                    <span class="badge text-bg-primary">At TU Berlin</span><br><br>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2025/26</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2025-26_winter/lde/lde_winter2025-26.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Summer 2025</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2025_summer/lde/lde_summer2025.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2024/25</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2024-25_winter/lde/lde_winter2024-25.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Summer 2024</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2024_summer/lde/lde_summer2024.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2023/24</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2023-24_winter/lde/lde_winter2023-24.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Summer 2023</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li><a href="teaching/2023_summer/lde/lde_summer2023.html">Large-scale Data Engineering</a> (seminar and project)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <span class="badge text-bg-secondary">At TU Graz</span><br><br>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Summer 2022</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>Data Management (assistant lecturer)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2021/22</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>Architecture of Database Systems (practical exercise)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <span class="badge text-bg-secondary">At TU Dresden</span><br><br>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2017/18</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>Information Retrieval (exercise)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2016/17</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>Information Retrieval (exercise)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">Winter 2015/16</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>Information Retrieval (exercise)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="card">
+                <a name="service"></a>
+                <h2 class="card-header">Service</h2>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2027</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>PC member <b class="paperVenue">SIGMOD 2027</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2026</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>PC member <b class="paperVenue">PVLDB Volume 19 (for VLDB 2026)</b></li>
+                                <li>PC member <b class="paperVenue">EDBT 2026</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2025</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    PC member <b class="paperVenue">PVLDB Volume 18 (for VLDB 2025)</b>
+                                    &nbsp;<span class="badge text-bg-dark">Distinguished Reviewer Award</span>
+                                </li>
+                                <li>
+                                    PC member <b class="paperVenue">EDBT 2025</b>
+                                    &nbsp;<span class="badge text-bg-dark">PC Honorable Mention</span>
+                                </li>
+                                <li>PC member <b class="paperVenue">NoDMC@BTW 2025</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2024</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>PC member <b class="paperVenue">PVLDB Volume 17 (for VLDB 2024)</b></li>
+                                <li>Reviewer <b class="paperVenue">VLDBJ</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2023</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>
+                                    PC member <b class="paperVenue">EDBT 2023</b>
+                                    &nbsp;<span class="badge text-bg-dark">Distinguished PC Member Award</span>
+                                </li>
+                                <li>PC member <b class="paperVenue">DEEM@SIGMOD 2023</b></li>
+                                <li>PC member <b class="paperVenue">NoDMC@BTW 2023</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b class="year">2022</b><br>&nbsp;
+                        </div>
+                        <div class="col-lg">
+                            <ul class="list-unstyled">
+                                <li>PC member <b class="paperVenue">CDMS@VLDB 2022</b></li>
+                                <li>PC member <b class="paperVenue">DEEM@SIGMOD 2022</b></li>
+                                <li>PC member <b class="paperVenue">GvDB 2022</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>
